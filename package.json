@@ -4,17 +4,28 @@
   "description": "Create something like redux undo to use in solidjs",
   "main": "index.js",
   "scripts": {
+    "compile": "npx babel --extensions .ts  ./src -d ./lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Elliot2636/solid-undo.git"
   },
-  "keywords": ["solid", "solidjs", "undo"],
+  "keywords": [
+    "solid",
+    "solidjs",
+    "undo"
+  ],
   "author": "elliot-teo",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Elliot2636/solid-undo/issues"
   },
-  "homepage": "https://github.com/Elliot2636/solid-undo#readme"
+  "homepage": "https://github.com/Elliot2636/solid-undo#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-typescript": "^7.17.12"
+  }
 }
